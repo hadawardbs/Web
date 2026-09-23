@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="/cadastro" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Digite seu nome" required>
+        <br>
+        <label for="idade">Idade</label>
+        <input type="number" id="idade" placeholder="Digite sua idade" min="1" max="99" required>
+        <br>
+        <label for="dataNascimento">Data de Nascimento</label>
+        <input type="date" id="dataNascimento">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Digite seu email" required>
+        <br>
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" placeholder="Digite sua senha" required>
+        <br>
+        <p>Selecione seu sexo</p>
+        <input type="radio" id="masculino" name="sexo" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="feminino" name="sexo" value="feminino">
+        <label for="feminino">Feminino</label>
+        <input type="radio" id="andro" name="sexo" value="andro">
+        <label for="andro">Prefiro não responder</label>
+        <br>
+        <p>Quais jogos você gosta?</p>
+        <input type="checkbox" id="velha" value="velha">
+        <label for="velha">Jogo da Velha</label>
+        <input type="checkbox" id="sudoku" value="sudoku">
+        <label for="sudoku">Sudoku</label>
+        <input type="checkbox" id="albion" value="albion">
+        <label for="albion">Albion Online</label>
+        <br>
+        <label for="personagem">Escolha seu personagem</label>
+        <select id="personagem">
+            <option value="">Escolha</option>
+            <option value="luna">🌚Luna</option>
+            <option value="djabo">😈Djabo</option>
+            <option value="berinja">🍆Berinja</option>
+        </select>
+        <br>
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" placeholder="Digite sua mensagem" rows="5" cols="30"></textarea>
+        <br>
+        <button type="submit">➡️Enviar</button>
+        <button type="reset">🗑️Limpar</button>
+        <button type="button">🔘Botão Qualquer</button>
+    </form>
+</body>
+</html>

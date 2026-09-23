@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>👵 Jogo da Velha</h1>
+        <p>Mini Games do Edubs</p>
+    </header>
+    <main>
+        <h2>Jogo da Velha</h2>
+        <section class="jogadores">
+            <div>
+                <p id="jogador1-escolhido">Jogador 1: Escolha seu personagem:</p>
+                <button onclick="escolherJogador1('🌝')">🌝</button>
+                <button onclick="escolherJogador1('😸')">😸</button>
+                <button onclick="escolherJogador1('🤖')">🤖</button>
+            </div>
+
+            <div>
+                <p id="jogador2-escolhido">Jogador 1: Escolha seu personagem:</p>
+                <button onclick="escolherJogador2('🌚')">🌚</button>
+                <button onclick="escolherJogador2('😈')">😈</button>
+                <button onclick="escolherJogador2('👽')">👽</button>
+            </div>
+        </section>
+        <br>
+        <button onclick="iniciarJogo()" style="font-size: 20px;">🕹️ INICIAR PARTIDA</button>
+        <h2 id="jogador-atual">Jogador da vez: ?</h2>
+        <section>
+            <table class="tabuleiroVelha">
+                <tbody>
+                <tr>
+                    <td onclick="jogar(this)"></td>
+                    <td onclick="jogar(this)"></td>
+                    <td onclick="jogar(this)"></td>
+                </tr>
+                <tr>
+                    <td onclick="jogar(this)"></td>
+                    <td onclick="jogar(this)"></td>
+                    <td onclick="jogar(this)"></td>
+                </tr>
+                <tr>
+                    <td onclick="jogar(this)"></td>
+                    <td onclick="jogar(this)"></td>
+                    <td onclick="jogar(this)"></td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+        <br>
+        <a href="../index.html">⬅️Voltar para o início</a>
+    </main>
+    <footer>
+        <p>Mini Games Web do Edubs - Projeto de Programação Web I</p>
+    </footer>
+    <script src="../js/velha.js"></script>
+</body>
+</html>
