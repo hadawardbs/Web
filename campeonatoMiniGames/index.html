@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Campeonato Mini Games</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <h1>🎮 Campeonato Mini Games</h1>
+            <p>Inscrição de Participantes</p>
+        </header>
+
+        <form id="formCadastro">
+            <h3>Dados do Participante</h3>
+            <label for="nome">Nome completo *</label>
+            <br>
+            <input type="text" id="nome" placeholder="Digite seu nome">
+            <br>
+            <div class="ladinho">
+                <div>
+                    <label for="idade">Idade *</label>
+                    <input type="number" id="idade" placeholder="Digite sua idade" min="1" max="99">
+                </div>
+                <div>
+                    <label for="dataNascimento">Data de Nascimento</label>
+                    <input type="date" id="dataNascimento">
+                </div>
+            </div>
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" placeholder="seuemail@exemplo.com">
+            <hr>
+            <h3>Preferências</h3>
+            <h4>Dificuldade</h4>
+            <input type="radio" id="facil" name="dificuldade" value="facil">
+            <label for="facil">Fácil</label>
+            <input type="radio" id="medio" name="dificuldade" value="medio">
+            <label for="medio">Médio</label>
+            <input type="radio" id="dificil" name="dificuldade" value="dificil">
+            <label for="dificil">Difícil</label>
+            <h4>Jogos Favoritos</h4>
+            <input type="checkbox" id="velha" name="jogosFavoritos" value="velha">
+            <label for="velha">Jogo da Velha</label>
+            <input type="checkbox" id="sudoku" name="jogosFavoritos" value="sudoku">
+            <label for="sudoku">Sudoku</label>
+            <input type="checkbox" id="mario" name="jogosFavoritos" value="mario">
+            <label for="mario">Mario Bros</label>
+            <br>
+            <br>
+            <label for="personagem">Personagem *</label>
+            <br>
+            <select id="personagem">
+                <option value="">Escolha um personagem</option>
+                <option value="lua">🌚</option>
+                <option value="djabo">😈</option>
+                <option value="berinja">🍆</option>
+            </select>
+            <br>
+            <label for="mensagem">Mensagem para o Campeonato</label>
+            <textarea id="mensagem" placeholder="Escreva sua mensagem..."></textarea>
+            <br>
+            <button type="submit">Cadastrar Participante</button>
+            <p class="resultado" id="resultado">...</p>
+        </form>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
